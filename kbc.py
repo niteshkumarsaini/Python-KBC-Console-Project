@@ -1,7 +1,7 @@
 import time
 from playsound import playsound
 print("WELCOME TO KBC CONSOLE APP !!")
-playsound('intro.mp3')
+playsound('sounds/intro.mp3')
 num=0
 time.sleep(1)
 win=0
@@ -13,7 +13,7 @@ answers=('(a) Narmada','(b) Cuttack','(c) Panini','(d) Bhagirathi','(b) Silver',
 amount=[1000,2000,3000,5000,10000,20000,40000,80000,160000,320000,640000,1250000,2500000,5000000,10000000,70000000]
 for i in range (0,14):
     print("Wait your Question is Loading...")
-    playsound('que.mp3')
+    playsound('sounds/que.mp3')
     print(question[i])
     for j in range(0,4):
        print(options[i][j])
@@ -34,14 +34,14 @@ for i in range (0,14):
     if options[i][num]==answers[i]:
          win=win+amount[i]
          print("Correct Answer you won",win,'RS')
-         playsound('correct.mp3')
+         playsound('sounds/correct.mp3')
     else:
         
         print("Sorry you Lost !")
-        playsound('wrong.mp3')
+        playsound('sounds/wrong.mp3')
         break
 
-print("Your Final Winning Amount is ",win,"Rs")
+print("Your Final Winning Amount is",win,"Rs")
 print("Thanks ..")
 
 
